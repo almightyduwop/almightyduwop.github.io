@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Premier Esküvőszervezés</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/c033a48ab9.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<style>
+    @media only screen and (max-width: 992px) {
+        #elsotartalom {
+            padding-top: 80px;
+            padding-left: 0px;
+            padding-bottom: 0px;
+        }
+        
+        #masodikrow {
+            padding-left: 0px;
+        }
+
+        #fodraszat, #dekoracio, #ruha, #foto, #tanc{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        #dekoracio{
+            order: 1;
+        }
+
+        #dekorkep{
+            order:2;
+        }
+
+        #foto{
+            order: 1;
+        }
+        #fotokep{
+            order: 2;
+        }
+        
+        #footersocial{
+            margin-left: 0px;
+            text-align: left;
+        }
+    }
+    
+    @media only screen and (max-width: 1200px){
+        #fodraszat, #dekoracio, #ruha, #foto, #tanc{
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    }
+</style>
+
+<body name="oldalteteje">
+    <nav class="navbar navbar-expand-lg text-uppercase fixed-top py-3" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand inactiveLink" href="index.html">Premier Esküvőszervezés</a>
+            <button
+                class="navbar-toggler custom-toggler"
+                type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="index.html">Főoldal</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="about.html">Rólunk</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="contact.html">Lépj kapcsolatba velünk!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row" id="elsotartalom">
+            <div class="col-12">
+                <h1>Professzionális, teljeskörű esküvőszervezés</h1>
+                <p id="szlogen">Álmaid esküvőjére vágysz? Mi lehetővé tesszük!</p>
+            </div>
+        </div>
+        <div class="row" id="masodikrow">
+            <div class="col-12 py-5">
+                <h4>Van ismerősöd, aki megszenvedett az esküvője megszervezésével?</h4><br>
+                <p>Van egy konkrét elképzelésed, de nem tudod hogyan valósítsd meg?
+                    Mi megszervezzük neked a teljes esküvőt, neked csak egy dolgod van: elmondani kívánságod.
+                    <br>Fiatal, ambíciózus csapatunk nem ismer lehetetlent. Válassz minket, és hidd el, nem bánod meg!</p>
+                    <p>Görgess lejjebb, hogy még többet tudj meg néhány szolgáltatásunkról.</p>
+            </div>
+        </div>
+        <div class="row" style="background-color: #e8dcc5; border-bottom: 5px black;">
+            <div class="col-lg-6" id="fodraszat">
+                <img src="src/images/fodrasz.png" alt="Fodrászat" class="custom-rounded">
+                <h2>Fodrászat</h2>
+                <p>Nem tudod, hogy kire bízd az esküvői hajad? Nem probléma!
+                    <br>Legyen szó a menyasszonyi frizuráról, vagy a leendő férj hajáról, mi gondoskodunk rólatok.<br>
+                    Fodrászaink a legjobb hajápoló termékekkel és eszközökkel dolgoznak, mert megérdemlitek!</p>
+            </div>
+            <div class="col-lg-6" id="fodraszkep">
+                <img src="src/images/haj1.jpg" alt="Fodrászat sample" class="img-fluid">
+            </div>
+        </div>
+        <div class="row" style="background-color: #e8dcc5;">
+            
+            <div class="col-lg-6" id="dekorkep">
+                <img src="src/images/dekor.jpg" alt="Dekoráció sample" class="img-fluid">
+            </div>
+            
+            <div class="col-lg-6" id="dekoracio">
+                <img src="src/images/dekor.png" alt="Dekoráció" class="custom-rounded">
+                <h2>Dekoráció</h2>
+                <p>Van egy elképzelésed a tökéletes díszletről, de nem tudod hol kezd el a kellékek beszerzését? <br>
+                    Egyszerűen add át nekünk a stafétát, had valósítsuk meg az elképzelésed.</p>
+            </div>
+        </div>
+        <div class="row" style="background-color: #e8dcc5;">
+            
+            <div class="col-lg-6" id="ruha">
+                <img src="src/images/ruhaikon.png" alt="Menyasszonyi ruha" class="custom-rounded">
+                <h2>Menyasszonyi ruha</h2>
+                <p>Legyen szó klasszikus, vagy modern fazonról, csapatunk divattervezője megvalósítja álmaidat. <br> 
+                    Nem kell kész konfekciódarabok közt válogatnod. Garantáltan azt kapod, amire vágysz.</p>
+            </div>
+
+            <div class="col-lg-6" id="ruhakep">
+                <img src="src/images/ruha.jpg" alt="Ruha sample" class="img-fluid">
+            </div>
+            
+            
+        </div>
+
+        <div class="row" style="background-color: #e8dcc5;">
+            
+            <div class="col-lg-6" id="fotokep">
+                <img src="src/images/fenykepesz.jpg" alt="Fotó sample" class="img-fluid">
+            </div>
+
+            <div class="col-lg-6" id="foto">
+                <img src="src/images/kameraikon.png" alt="Teljeskörű fotózás" class="custom-rounded">
+                <h2>Fotózás</h2>
+                <p>Profi fényképészünk minden pillanatot megörökít, csoportos- és egyéni fotókat is készítve. <br>
+                A fényképeket rövidesen az esküvő után el is juttatja hozzátok.</p>
+            </div>     
+        </div>
+
+        <div class="row" style="background-color: #e8dcc5;">
+            
+            <div class="col-lg-6" id="tanc">
+                <img src="src/images/tancikon.png" alt="Teljeskörű fotózás" class="custom-rounded">
+                <h2>Tánc</h2>
+                <p>Szakmailag elismert versenytáncosaink megtanítják akár egyikőtöket, akár mindkettőtöket a társastánc fortélyaira. <br>
+                Nem számít, hogy valaha táncoltatok-e, a ti napotokon garantáltan lenyűgöző tánccal fogtok kiállni a család és a barátok elé.</p>
+            </div>  
+
+            <div class="col-lg-6" id="tanckep">
+                <img src="src/images/tanckep.jpg" alt="Tánc sample" class="img-fluid">
+            </div> 
+        </div>
+        <footer>
+            <div class="row fixed-bottom" id="footerrow">
+                <div class="col-12 offset-xl-2" id="footersocial">
+                    Vedd fel velünk a kapcsolatot:
+                    <a href="mailto:contact@premierweddings.hu" target="_blank"><i class="fa fa-envelope-o mx-5" aria-hidden="true"> - <i>contact@premierweddings.hu</i></i></a>
+                    <a href="https://facebook.com/Premier-Wedding-106168090908868/" target="_blank"><i class="fa fa-facebook-square mx-5" aria-hidden="true"> - <i>Premier Esküvőszervezés</i></i></a>
+                    <a href="https://instagram.com/premierweddings.hu/" target="_blank"><i class="fa fa-instagram mx-5  offset-2" aria-hidden="true"> - <i>premierweddings.hu</i></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Premier Esküvőszervezés - Kapcsolat</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/c033a48ab9.js"></script>
+  <link href="http://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+</head>
+<style>
+  @media only screen and (max-width: 992px) {
+    #footersocial {
+      margin-left: 0px;
+      text-align: left;
+    }
+
+    #footerrow {
+      visibility: hidden;
+    }
+
+    #cim {
+      visibility: hidden;
+    }
+
+    form {
+      padding-top: 0px !important;
+    }
+
+}
+@media only screen and (max-width: 1200px) {
+  #nevlabel{
+    padding-left: 50px;
+  }
+
+ 
+}
+
+  nav {
+    background-color: rgba(90, 83, 83, 0.733)
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+  }
+
+  a:active {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+  }
+
+  a:hover {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+  }
+
+  .inactiveLink {
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  #footerrow {
+    background-color: rgba(90, 83, 83, 0.733);
+    color: white;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(src/images/bg1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  #kontakttartalom {
+    color: white;
+    background-color: rgba(90, 83, 83, 0.733);
+    text-shadow: 2px 2px 2px black;
+  }
+
+  #cim {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 50px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+
+  #kontakttartalom {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+
+  #elkuldes {
+    align-content: justify;
+    position: relative;
+
+  }
+
+  form {
+    padding-top: 80px;
+    margin-left: 50px;
+    width: 100%;
+    margin: 0 0 15px 0;
+
+  }
+
+  legend {
+    margin-right: 50px;
+  }
+
+  #nevlabel {
+    margin-left: -30px;
+    margin-right: 30px;
+  }
+
+  .iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%
+  }
+
+  .iframe-container>* {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+</style>
+
+<body name="oldalteteje">
+  <nav class="navbar navbar-expand-xl text-uppercase fixed-top py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand inactiveLink" href="index.html">Premier Esküvőszervezés</a>
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-xl-1">
+            <a class="nav-link py-3 px-0 px-xl-3 rounded" href="index.html">Főoldal</a>
+          </li>
+          <li class="nav-item mx-0 mx-xl-1">
+            <a class="nav-link py-3 px-0 px-xl-3 rounded" href="about.html">Rólunk</a>
+          </li>
+          <li class="nav-item mx-0 mx-xl-1">
+            <a class="nav-link py-3 px-0 px-xl-3 rounded" href="contact.html">Lépj kapcsolatba velünk!</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" id="main">
+    <div class="row" id="cim">
+      <div class="col-12">
+        <p>Kapcsolat</p>
+      </div>
+    </div>
+    <div class="row" id="kontakttartalom">
+      <div class="col-xl-6">
+        <p style="text-align: left">
+          <h2>Premier Esküvő- és Rendezvényszervezés</h2> <br>
+          1052 Budapest, Deák Ferenc tér <br>
+          Nyitvatartás: H-P: 8:00-21:00 <br>
+          Telefon: +36 XX XXXXXXX <br>
+          E-mail: contact@premierweddings.hu <br>
+        </p>
+        <div class="iframe-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.581322925125!2d19.053271013078312!3d47.4980690337113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc41d2b5e169%3A0xef31e078a69625ad!2zQnVkYXBlc3QsIERlw6FrIEZlcmVuYyB0w6lyLCBNYWd5YXJvcnN6w6Fn!5e0!3m2!1shu!2srs!4v1578059503946!5m2!1shu!2srs"
+            width="500" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div> <br>
+        <div class="row text-center">
+          <div class="col-12">
+            <a href="mailto:contact@premierweddings.hu" target="_blank"><i class="fa fa-envelope-o mx-5"
+              aria-hidden="true"> - <i>contact@premierweddings.hu</i></i></a>
+          <a href="https://facebook.com/Premier-Wedding-106168090908868/" target="_blank"><i class="fa fa-facebook-square mx-5"
+              aria-hidden="true"> - <i>Premier Esküvőszervezés</i></i></a>
+          <a href="https://instagram.com/premierweddings.hu/" target="_blank"><i class="fa fa-instagram mx-5  offset-2"
+              aria-hidden="true"> - <i>premierweddings.hu</i></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6">
+        <form action="contact.html" method="get">
+          <div class="form-group row">
+            <label for="nev" class="col-xl-2 col-form-label" id="nevlabel">Név</label>
+            <div class="col-xl-10">
+              <input type="text" class="form-control" id="nev" placeholder="Név">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="email" class="col-xl-2 col-form-label" id="nevlabel">E-mail</label>
+            <div class="col-xl-10">
+              <input type="email" class="form-control" id="email" placeholder="Email cím">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="telefonszam" class="col-xl-2 col-form-label" id="nevlabel">Telefonszám</label>
+            <div class="col-xl-10">
+              <input type="text" class="form-control" id="telefonszam" placeholder="Telefonszám">
+            </div>
+          </div>
+          <fieldset class="form-group">
+            <div class="row">
+              <legend class="col-form-label col-xl-2">Szolgáltatások:</legend>
+              <div class="col-xl-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="szoxlaltatas1" id="checkB" value="haj">
+                  <label class="form-check-label" for="checkB1">
+                    Fodrászat
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="szoxlaltatas2" id="checkB" value="ruha">
+                  <label class="form-check-label" for="checkB2">
+                    Menyasszonyi ruha
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="szoxlaltatas3" id="checkB" value="fotos">
+                  <label class="form-check-label" for="checkB3">
+                    Fotózás
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-group row">
+            <div class="form-group">
+              <label for="uzenetTA" style="margin-left: 20px;">Üzenet</label>
+              <textarea style="width:450px;" class="form-control mx-3" id="uzenetTA" rows="3" placeholder="Kérlek ide írd az üzeneted!" ></textarea>
+            </div>
+          </div>
+          <div class="form-group row offset-xl-3 offset-xl-6 text-center" id="elkuldes">
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Üzenet elküldése</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="row fixed-bottom" id="footerrow">
+        <div class="col-12 offset-xl-2" id="footersocial">
+          Vedd fel velünk a kapcsolatot:
+          <a href="mailto:contact@premierweddings.hu" target="_blank"><i class="fa fa-envelope-o mx-5"
+              aria-hidden="true"> - <i>contact@premierweddings.hu</i></i></a>
+          <a href="https://facebook.com/Premier-Wedding-106168090908868/" target="_blank"><i class="fa fa-facebook-square mx-5"
+              aria-hidden="true"> - <i>Premier Esküvőszervezés</i></i></a>
+          <a href="https://instagram.com/premierweddings.hu/" target="_blank"><i class="fa fa-instagram mx-5  offset-2"
+              aria-hidden="true"> - <i>premierweddings.hu</i></i></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+nav{
+    background-color: rgba(90, 83, 83, 0.733)
+}
+a {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+  }
+
+a:active{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+a:hover {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+  }
+ 
+.inactiveLink {
+    pointer-events: none;
+    cursor: default;
+ }
+
+ body{
+    font-family: 'Roboto', sans-serif;
+ }
+
+#elsotartalom{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    padding-top: 330px;
+    padding-left: 80px;
+    padding-bottom: 200px;
+    background-image: url(images/bg4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#szlogen{
+    font-style: italic;
+    font-size: 20px;
+}
+
+#masodikrow{
+    background-color: rgba(90, 83, 83, 0.733);
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    font-size: 18px;
+    padding-left: 80px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+#fodraszat, #dekoracio, #ruha, #foto, #tanc{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+
+
+
+.custom-rounded{
+    border-radius: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin:auto;
+}
+
+#fodraszat>img{
+    width: 140px;
+}
+
+.col-lg-6{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+#footerrow{
+    background-color: rgba(90, 83, 83, 0.733);
+    color: white;
+    
+}
+
+#createdby{
+    text-align: center;
+}
+
