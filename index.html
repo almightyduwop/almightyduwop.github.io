@@ -11,9 +11,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
-    
+
     <title>Balázs Medical - Főoldal</title>
 </head>
 
@@ -22,9 +21,10 @@
         <nav class="navbar navbar-expand-lg text-uppercase navbar-light" id="mainNav">
             <div class="container-fluid">
                 <a class="navbar-brand inactiveLink"><img src="./media/balazsmedical_logo.png" alt="Balázs Medical"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNav" aria-controls="collapseNav" aria-expanded="false" aria-label="Navigáció ki- és bekapcsolása.">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNav"
+                    aria-controls="collapseNav" aria-expanded="false" aria-label="Navigáció ki- és bekapcsolása.">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
+                </button>
                 <div class="navbar-collapse collapse justify-content-end" id="collapseNav">
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item linkshadow">
@@ -48,123 +48,141 @@
 
     <div id="main">
         <div class="container-fluid" id="carouselContainer">
-                <div id="topcarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#topcarousel" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="1. kép"></button>
-                        <button type="button" data-bs-target="#topcarousel" data-bs-slide-to="1"
-                            aria-label="2. kép"></button>
-                        <button type="button" data-bs-target="#topcarousel" data-bs-slide-to="2"
-                            aria-label="3. kép"></button>
-                        <button type="button" data-bs-target="#topcarousel" data-bs-slide-to="3"
-                            aria-label="4. kép"></button>
-                        <button type="button" data-bs-target="#topcarousel" data-bs-slide-to="4"
-                            aria-label="5. kép"></button>
+            <div id="topcarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#topcarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="1. kép"></button>
+                    <button type="button" data-bs-target="#topcarousel" data-bs-slide-to="1"
+                        aria-label="2. kép"></button>
+                    <button type="button" data-bs-target="#topcarousel" data-bs-slide-to="2"
+                        aria-label="3. kép"></button>
+                    <button type="button" data-bs-target="#topcarousel" data-bs-slide-to="3"
+                        aria-label="4. kép"></button>
+                    <button type="button" data-bs-target="#topcarousel" data-bs-slide-to="4"
+                        aria-label="5. kép"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="media/lobby1scaled.jpg" class="d-block w-100"
+                            alt="Váróterem. Két bőr fotel, köztük asztallal. Nagy tér, festmény a falon. Erősen kivilágított.">
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="media/lobby1scaled.jpg" class="d-block w-100"
-                                alt="Váróterem. Két bőr fotel, köztük asztallal. Nagy tér, festmény a falon. Erősen kivilágított.">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="media/dent1scaled.jpg" class="d-block w-100"
-                                alt="Fogorvosi rendelő készüléke. Jobb kéz felől számítógép, rajta egy fogorvosi programmal.">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="media/dent2scaled.jpg" class="d-block w-100"
-                                alt="Fogorvosi rendelő. Középen egy szék, a páciensnek. Mögötte hosszú pult. Bal kéz felől nagy ablak.">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./media/optscaled.jpg" class="d-block w-100" alt="Szemvizsgálati gép az asztalon.">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./media/opt2scaled.jpg" class="d-block w-100"
-                                alt="Nagy szemorvosi gép. Egy hölgy szemét épp vizsgálják vele.">
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#topcarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Előző kép</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#topcarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Következő kép</span>
-                        </button>
+                    <div class="carousel-item">
+                        <img src="media/dent1scaled.jpg" class="d-block w-100"
+                            alt="Fogorvosi rendelő készüléke. Jobb kéz felől számítógép, rajta egy fogorvosi programmal.">
                     </div>
+                    <div class="carousel-item">
+                        <img src="media/dent2scaled.jpg" class="d-block w-100"
+                            alt="Fogorvosi rendelő. Középen egy szék, a páciensnek. Mögötte hosszú pult. Bal kéz felől nagy ablak.">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./media/optscaled.jpg" class="d-block w-100" alt="Szemvizsgálati gép az asztalon.">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./media/opt2scaled.jpg" class="d-block w-100"
+                            alt="Nagy szemorvosi gép. Egy hölgy szemét épp vizsgálják vele.">
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#topcarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Előző kép</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#topcarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Következő kép</span>
+                    </button>
+                </div>
             </div>
         </div>
 
         <div class="container-fluid" id="koszonto">
             <div class="row">
-                <div class="col-lg-12 col-xl-7">
+                <div class="col-12 col-xl-7">
 
-                        <h1>Üdvözöljük a Balázs Medical honlapján!</h1>
-                        <p>
-                        Magánrendelésünk elkötelezett a <em>magas színvonalú</em> ellátás mellett, melyet nem csak elegáns- és
-                        otthonos környezetünkkel, de az általunk használt <em>csúcsminőségű</em> vizsgálati eszközökkel is
+                    <h1>Üdvözöljük a Balázs Medical honlapján!</h1>
+                    <p>
+                        Magánrendelésünk elkötelezett a <em>magas színvonalú</em> ellátás mellett, melyet nem csak
+                        elegáns- és
+                        otthonos környezetünkkel, de az általunk használt <em>csúcsminőségű</em> vizsgálati eszközökkel
+                        is
                         biztosítunk. <br>Orvosaink a szakterületük legkiválóbbjai közé tartoznak, akik <em>maximális
                             profizmussal és a legújabb sztenderdekkel összhangban</em> dolgoznak azon, hogy pácienseik
                         elégedetten és egészségesen távozzanak. <br>Legyen szó első kivizsgálásról, vagy rendszeres
                         kezelésről, célunk megegyezik: az egészség megőrzése, és ügyfeleink segítése. <br>
-                        Rendelőnk nagy hangsúlyt fektet továbbá ezen betegségek megelőzésére is, így orvosaink rendszeresen tartanak
+                        Rendelőnk nagy hangsúlyt fektet továbbá ezen betegségek megelőzésére is, így orvosaink
+                        rendszeresen tartanak
                         csoportos szemináriumokat, ahol különböző betegségekről és azok megelőzéséről tartanak
-                        felvilágosítást.    <br>
+                        felvilágosítást. <br>
                         Ezen társadalmi szerepvállalást azért is fontosnak tartjuk, hogy a fiatalabb és idősebb
                         generációk fel tudják ismerni egy- egy betegség tüneteit, és mielőbb orvosi segítséghez
                         forduljanak azok előfordulása esetén. <strong>Nálunk az egészség az első!</strong>
-                        </p>
+                    </p>
                 </div>
-                <div class="col-lg-12 col-xl-5 videocol">
-                    <iframe title="Rövid angol nyelvű videó az egészség megőrzéséről." width="560" height="315" src="https://www.youtube.com/embed/zSguDQRjZv0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="col-12 col-xl-5 videocol">
+                    <iframe title="Rövid angol nyelvű videó az egészség megőrzéséről." width="560" height="315"
+                        src="https://www.youtube.com/embed/zSguDQRjZv0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </div>
 
-            <div class="container" id="orvosaink">
-                <div class="row">
-                    <h2 class="alcim">Orvosaink</h2>
-                                <div class="col-lg-4">
-                                    <figure class="orvosbox">
-                                        <img src="media/docplaceholdernew.png" alt="Doktornő képe">
-                                        <figcaption class="text-center">Dr. Balázs Natasa - szemorvos</figcaption>
-                                    </figure>
-                                </div>
-                                <div class="col-lg-4">
-                                    <figure class="orvosbox">
-                                        <img src="media/docplaceholdernew.png" alt="Doktor képe">
-                                        <figcaption class="text-center">Dr. Balázs Ottó - fogorvos</figcaption>
-                                    </figure>
-                                </div>
-                                <div class="col-lg-4">
-                                <figure class="orvosbox">
-                                    <img src="media/docplaceholdernew.png" alt="Doktornő képe">
-                                    <figcaption class="text-center">Dr. Füzesy Edina - bőrgyógyász</figcaption>
-                                </figure>
-                                </div>
+        <div class="container" id="orvosaink">
+            <div class="row">
+                <h2 class="alcim">Orvosaink</h2>
+                <div class="col-lg-4">
+                    <figure class="orvosbox">
+                        <img src="media/docplaceholdernew.png" alt="Doktornő képe">
+                        <figcaption class="text-center">Dr. Balázs Natasa - szemorvos</figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4">
+                    <figure class="orvosbox">
+                        <img src="media/docplaceholdernew.png" alt="Doktor képe">
+                        <figcaption class="text-center">Dr. Balázs Ottó - fogorvos</figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4">
+                    <figure class="orvosbox">
+                        <img src="media/docplaceholdernew.png" alt="Doktornő képe">
+                        <figcaption class="text-center">Dr. Füzesy Edina - bőrgyógyász</figcaption>
+                    </figure>
                 </div>
             </div>
+        </div>
 
         <div class="container" id="velemenyek">
             <h2 class="alcim">Rólunk mondták</h2>
             <div class="row">
                 <div class="col-xl-4">
                     <figure class="velemenybox">
-                        <img class="img-circle" src="./media/docplaceholdernew.png" alt="Férfi arcképe" width="140" height="140">
+                        <img class="img-circle" src="./media/docplaceholdernew.png" alt="Férfi arcképe" width="140"
+                            height="140">
                         <h2>Barnabás</h2>
-                        <p class="velemeny">Komoly fogfájdalmakkal érkeztem, fájdalom nélkül és elégedetten távoztam. Rendkívül profi ellátás, nagyon tiszta környezet. Barátságos személyzet. Számomra már nem nyűg a fogorvos, főleg, hogy azóta az egész család ide jár. </p>
-                    </figure>
-                  </div>
-                <div class="col-xl-4">
-                    <figure class="velemenybox">
-                        <img class="img-circle" src="./media/docplaceholdernew.png" alt="Férfi arcképe" width="140" height="140">
-                        <h2>Olivér</h2>
-                        <p class="velemeny">Éreztem, hogy valami nincs rendben az új szemüvegemmel. Meglátogattam a doktornőt, és hamar kiderült, hogy tovább romlott a szemem. Ilyen közvetlen és korrekt szemorvossal rég találkoztam. Biztos, hogy a jövőben is őket választom!  </p>
+                        <p class="velemeny">Komoly fogfájdalmakkal érkeztem, fájdalom nélkül és elégedetten távoztam.
+                            Rendkívül profi ellátás, nagyon tiszta környezet. Barátságos személyzet. Számomra már nem
+                            nyűg a fogorvos, főleg, hogy azóta az egész család ide jár. </p>
                     </figure>
                 </div>
                 <div class="col-xl-4">
                     <figure class="velemenybox">
-                        <img class="img-circle" src="./media/docplaceholdernew.png" alt="Nő arcképe" width="140" height="140">
+                        <img class="img-circle" src="./media/docplaceholdernew.png" alt="Férfi arcképe" width="140"
+                            height="140">
+                        <h2>Olivér</h2>
+                        <p class="velemeny">Éreztem, hogy valami nincs rendben az új szemüvegemmel. Meglátogattam a
+                            doktornőt, és hamar kiderült, hogy tovább romlott a szemem. Ilyen közvetlen és korrekt
+                            szemorvossal rég találkoztam. Biztos, hogy a jövőben is őket választom! </p>
+                    </figure>
+                </div>
+                <div class="col-xl-4">
+                    <figure class="velemenybox">
+                        <img class="img-circle" src="./media/docplaceholdernew.png" alt="Nő arcképe" width="140"
+                            height="140">
                         <h2>Kitti</h2>
-                        <p class="velemeny">Már évek óta meggyűlik a bajom a komoly pattanásokkal. Egyik rendelő után a másikat látogattam, de végül itt, a Balázs Medicalban oldották meg a problémám. Többször jártam itt, minden alkalommal tiszta, rendezett rendelő fogadott, ahol azt éreztem, hogy tényleg az én egészségem az első. Bátran ajánlom mindenkinek.</p>
+                        <p class="velemeny">Már évek óta meggyűlik a bajom a komoly pattanásokkal. Egyik rendelő után a
+                            másikat látogattam, de végül itt, a Balázs Medicalban oldották meg a problémám. Többször
+                            jártam itt, minden alkalommal tiszta, rendezett rendelő fogadott, ahol azt éreztem, hogy
+                            tényleg az én egészségem az első. Bátran ajánlom mindenkinek.</p>
                     </figure>
                 </div>
             </div>
@@ -176,89 +194,99 @@
                 <div class="col-12">
                     <time datetime="2021-02-24"><strong>2021.02.24.</strong></time>
                     <p class="kozerdekuhir">
-                        Tisztelt látogató! 
-                        Ezúton is tájékoztatjuk mindannyiukat, hogy a járványhelyzetre való tekintettel rendelőnk továbbra is csak előzetes időpontfoglalással látogatható! 
-                        Kérjük, hogy az Időpontfoglalás fül alatt található űrlap kitöltésével, vagy elérhetőségeink egyikén keressen meg minket.
+                        Tisztelt látogató!
+                        Ezúton is tájékoztatjuk mindannyiukat, hogy a járványhelyzetre való tekintettel rendelőnk
+                        továbbra is csak előzetes időpontfoglalással látogatható!
+                        Kérjük, hogy az Időpontfoglalás fül alatt található űrlap kitöltésével, vagy elérhetőségeink
+                        egyikén keressen meg minket.
                     </p>
                 </div>
                 <div class="col-12">
                     <time datetime="2021-02-24"><strong>2021.01.16.</strong></time>
                     <p class="kozerdekuhir">
                         Tisztelt páciensek!
-                        Az év elejei szabadság előreláthatólag 2021. január 22-ig tart. 
-                        Ezidáig a feltüntetett telefonszámokon nem vagyunk elérhetőek, a rendelő pedig zárva tart. 
-                        Kérjük, hogy kérdéseiket a feltüntetett “contact@balazsmedical.hu” e-mail címre küldjék. 
+                        Az év elejei szabadság előreláthatólag 2021. január 22-ig tart.
+                        Ezidáig a feltüntetett telefonszámokon nem vagyunk elérhetőek, a rendelő pedig zárva tart.
+                        Kérjük, hogy kérdéseiket a feltüntetett “contact@balazsmedical.hu” e-mail címre küldjék.
                         Tájékoztatjuk önöket, hogy megkereséseikre csak január 22-ét követően tudunk válaszolni.
                     </p>
                 </div>
             </div>
         </div>
-    <div class="container-fluid" id="contactfluidc">
-        <div class="container" id="elerhetosegek">
-            <h2 class="alcim">Elérhetőségeink</h2>
-                <div class="row">
+        <div class="container-fluid" id="contactfluidc">
+            <div class="container" id="elerhetosegek">
+                <h2 class="alcim">Elérhetőségeink</h2>
+                <div class="row borderrow">
                     <div class="col-lg-5">
                         <div style="width: 100%">
-                        <iframe title="Térképen jelölt hely, Deák Ferenc tér 8 a rendelő címe." width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=De%C3%A1k%20Ferenc%20t%C3%A9r%208,%20Budapest+(Bal%C3%A1zs%20Medical%20Center)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                            <iframe title="Térképen jelölt hely, Deák Ferenc tér 8 a rendelő címe." width="100%"
+                                height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                                src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=De%C3%A1k%20Ferenc%20t%C3%A9r%208,%20Budapest+(Bal%C3%A1zs%20Medical%20Center)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-5">
-                    <table id="contactinfotable">
-                            <tr>
-                                <td class="centeronmob">
-                                    <img src="./media/smartphone.png" class="icon" alt="Mobiltelefonszám">
-                                </td>
-                                <td>
-                                    <a href="tel:+36200000000">+36 20 000 0000</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="centeronmob">
-                                    <img src="./media/phone-call.png" class="icon" alt="Vezetékes telefonszám">
-                                </td>
-                                <td>
-                                    <a href="tel:+36100000000">+36 1 000 0000</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="centeronmob">
-                                    <img src="./media/mail.png" class="icon" alt="E-mail cím">
-                                </td>
-                                <td>
-                                    <a href = "mailto:contact@balazsmedical.hu">contact@balazsmedical.hu</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="centeronmob">
-                                    <img src="./media/office.png" class="icon" alt="Rendelő címe - helye">
-                                </td>
-                                <td>
-                                    <a href="https://goo.gl/maps/4kQRcQhHbrYn61Q56">1052 Budapest, Deák Ferenc tér 8.</a>
-                                </td>
-                            </tr>
-                        <tr id="socialmedialine">
-                            <td id="instatd">
+                    <div class="col-lg-7 tableofcontacts">
+                        <div class="row">
+                            <div class="col-3 contacticons">
+                                <img src="./media/smartphone.png" class="icon" alt="Mobiltelefonszám">
+                            </div>
+                            <div class="col-9 datacolumn">
+                                <a href="tel:+36200000000">+36 20 000 0000</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 contacticons">
+                                <img src="./media/phone-call.png" class="icon" alt="Vezetékes telefonszám">
+                            </div>
+                            <div class="col-9 datacolumn">
+                                <a href="tel:+36100000000">+36 1 000 0000</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 contacticons">
+                                <img src="./media/mail.png" class="icon" alt="E-mail cím">
+                            </div>
+                            <div class="col-9 datacolumn">
+                                <a href="mailto:contact@balazsmedical.hu">contact@balazsmedical.hu</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 contacticons">
+                                <img src="./media/office.png" class="icon" alt="Rendelő címe - helye">
+                            </div>
+                            <div class="col-9 datacolumn">
+                                <a
+                                    href="https://www.google.com/maps/place/Budapest,+Deák+Ferenc+u.+8,+1052+Magyarország">1052
+                                    Budapest, Deák Ferenc tér 8.</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 contacticons">
                                 <img src="./media/ig1.png" class="socialmediaicon" alt="Instagram név">
-                                <span class="hideonsm">balazsmedical</span>
-                            </td>
-                               <td id="fbtd">
-                                    <img src="./media/fb2.png" class="socialmediaicon" alt="Facebook név">
-                                    <span class="hideonsm">Balázs Medical Center</span>
-                               </td>
-                        </tr>
-                    </table>
+                            </div>
+                            <div class="col-9 datacolumn">
+                                <a href="http://www.instagram.com/balazsmedical">balazsmedical</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 contacticons">
+                                <img src="./media/fb2.png" class="socialmediaicon" alt="Facebook név">
+                            </div>
+                            <div class="col-9 datacolumn">
+                                <a href="http://facebook.com/balazsmedical">Balázs Medical Center</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-        <footer>
-            <div class="container-fluid">
-                <div class="col-12 text-center">
-                    <h2>Balázs Medical &copy; - 2021</h2>
-                </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="col-12 text-center">
+                <h2>Balázs Medical &copy; - 2021</h2>
             </div>
-        </footer>
+        </div>
+    </footer>
 </body>
 
 </html>

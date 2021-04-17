@@ -190,6 +190,10 @@ a:hover{
 
 /* ---------- ELÉRHETŐSÉGEK ---------- */
 
+.table td{
+    border: 0px;
+}
+
 #elerhetosegek{
     padding-bottom: 50px;
 }
@@ -218,24 +222,20 @@ a:hover{
     height: 25px;
 }
 
-#contactinfotable{
-    height: 400px;
-    width: 600px;
+.contacticons img{
+    margin-bottom: 10px;
 }
 
-#contactinfotable tr{
-    margin: 10px;
+#elerhetosegek .row{
+    border-width: 0px;
 }
 
-#contactinfotable tr td:first-child{
-    width: 80px;
-    max-width: 80px;
+.borderrow{
+    border: 3px solid black !important;
 }
 
-#socialmedialine td:last-child{
-    width: 200px;
-    padding-left: 50px;
-    text-align: left;
+#elerhetosegek{
+    margin-bottom: 30px;
 }
 
 /* ---------- ELÉRHETŐSÉGEK VÉGE ---------- */
@@ -269,13 +269,46 @@ footer{
 
 /* ---------- MOBIL NÉZET ---------- */
 
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 385px){
 
-
-        #contactinfotable{
-            max-width: 50%;
+        #koszonto{
+            padding-top: 0px;
         }
 
+        #koszonto p{
+            text-align: center;
+        }
+
+        #elerhetosegek .alcim{
+            margin-bottom: 20px !important;
+        }
+
+        .datacolumn{
+            padding-left: 0px;
+        }
+
+        .contacticons{
+            width: 60px;
+            float: left;
+        }
+
+        .videocol > iframe{
+            width: 200px !important;
+            max-width: 200px !important;
+        }
+
+        #formcontainer .submitbutton{
+            width: 200px;
+            font-size: 1.2em;
+        }
+
+        #formcontainer .resetbutton{
+            width: 100px;
+            margin-left: 40px;
+        }
+    }
+
+    @media screen and (max-width: 650px) {
         #koszonto iframe{
             width: 350px;
         }
@@ -299,22 +332,13 @@ footer{
         text-align: center;
     }
 
-    .centeronmob{
-        text-align: center !important;
+    #servicesMain h1{
+        font-size: 1.8rem !important;
     }
 
-    #contactinfotable tr td:last-child{
-        padding-left: 0px;
+    .servcont table{
+        width: 33%;
     }
-
-    #socialmedialine td:last-child{
-        padding-left: 40px !important;
-    }
-
-    #contactinfotable tr td:first-child{
-        text-align: right;
-    }
-
 }
 
 /* ---------- MOBIL NÉZET VÉGE ---------- */
@@ -367,23 +391,6 @@ footer{
         margin-right: 80px;
     }
 
-    #contactinfotable tr td{
-        text-align: left;
-        padding-left: 20px;
-    }
-
-    /* FORM OPTIMALIZÁLÁSA KIS MÉRETEKRE: */
-
-    form input, form button{
-        margin-top: 20px;
-    }
-
-    #formcontainer{
-        padding-left: 50px !important;
-        padding-right: 50px !important;
-    }
-
-    
 }
 
 @media screen and (max-width: 1350px) {
@@ -427,10 +434,19 @@ footer{
         margin-left: 30px;
         margin-right: 30px;
     }
+ 
+}
 
-    #formcontainer{
-        margin-bottom: 50px;
-    }
+@media screen and (max-width: 1400px){
+        /* FORM OPTIMALIZÁLÁSA KIS MÉRETEKRE: */
+        form input, form button{
+            margin-top: 20px;
+        }
+    
+        #formcontainer{
+            padding-left: 50px !important;
+            padding-right: 50px !important;
+        } 
 }
 
 /* SERVICES.HTML - SZOLGÁLTATÁSOK OLDALA */
@@ -486,6 +502,7 @@ footer{
     width: 60%;
     text-align: center;
     vertical-align: middle;
+    padding-bottom: 0px !important;
 }
 
 #contactpagetable td:first-child{
@@ -515,6 +532,7 @@ footer{
     padding-right: 150px;
     padding-left: 150px;
     border: 1px black solid;
+    margin-bottom: 50px;
 }
 
 .radiobuttons{
