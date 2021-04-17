@@ -1,6 +1,8 @@
 /* Szalai Bence - M1MJIR
 ELTE IK - Webfejlesztés */
 
+body, html { overflow-x:hidden; }
+
 body{
     background-color: #e2d3c0;
     font-family: 'Montserrat', sans-serif;
@@ -268,6 +270,7 @@ footer{
 /* ---------- MOBIL NÉZET ---------- */
 
     @media screen and (max-width: 650px) {
+
 
         #contactinfotable{
             max-width: 50%;
