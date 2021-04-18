@@ -31,7 +31,7 @@ a:hover{
 
 /* ---------- NAVIGÁCIÓ ---------- */
 .navbar-brand{
-    image-resolution: 100px;
+    width: 100px; height: 100px;
 }
 
 .navbar{
