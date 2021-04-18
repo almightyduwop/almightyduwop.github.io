@@ -292,11 +292,6 @@ footer{
             float: left;
         }
 
-        .videocol > iframe{
-            width: 200px !important;
-            max-width: 200px !important;
-        }
-
         #formcontainer .submitbutton{
             width: 200px;
             font-size: 1.2em;
@@ -305,6 +300,11 @@ footer{
         #formcontainer .resetbutton{
             width: 100px;
             margin-left: 40px;
+        }
+
+        .videocol > iframe{
+            width: 200px !important;
+            max-width: 200px !important;
         }
     }
 
