@@ -29,6 +29,20 @@ a:hover{
     text-shadow:1px 1px rgba(0,0,0,0.4);
 }
 
+#tartalomraugras{
+    background: #319795;
+    color: #fff;
+    font-weight: 700;
+    padding: 4px;
+    position: absolute;
+    left:-10000px;
+    transform: translateY(-100%);
+}
+
+#tartalomraugras:focus {
+    transform: translateY(0%);
+  }
+
 /* ---------- NAVIGÁCIÓ ---------- */
 .navbar-brand{
     image-resolution: 100px, 100px;
@@ -238,6 +252,11 @@ a:hover{
     margin-bottom: 30px;
 }
 
+.mapsembed{
+    width: 525px;
+    height: 400px; 
+}
+
 /* ---------- ELÉRHETŐSÉGEK VÉGE ---------- */
 
 /* ---------- LÁBLÉC ---------- */
@@ -302,14 +321,21 @@ footer{
             margin-left: 40px;
         }
 
-        .videocol iframe{
-            width: 200px !important;
+        .videocol video{
+            width: 250px !important;
             max-width: 200px !important;
+            position: relative;
+            left: -10%;
         }
+
+        .videocol video[poster]{
+            object-fit: cover;
+        }
+
     }
 
     @media screen and (max-width: 650px) {
-        #koszonto iframe{
+        #koszonto video{
             width: 350px;
         }
 
@@ -396,7 +422,6 @@ footer{
         vertical-align: middle;
         text-align: center;
     }
-
 }
 
 @media screen and (max-width: 1350px) {
@@ -444,7 +469,7 @@ footer{
 }
 
 @media screen and (max-width: 1400px){
-        /* FORM OPTIMALIZÁLÁSA KIS MÉRETEKRE: */
+    /* FORM OPTIMALIZÁLÁSA KIS MÉRETEKRE: */
         form input, form button{
             margin-top: 20px;
         }
@@ -453,6 +478,15 @@ footer{
             padding-left: 50px !important;
             padding-right: 50px !important;
         } 
+
+        
+    .contacticons{
+        text-align: right;
+    }
+
+    #contact iframe, #elerhetosegek iframe{
+        width: 100% !important;
+    }
 }
 
 /* SERVICES.HTML - SZOLGÁLTATÁSOK OLDALA */
@@ -529,10 +563,11 @@ footer{
 }
 
 #contact iframe{
+    width: 90%;
     margin-top: 50px;
     margin-bottom: 50px;
-    max-width: 1000px;
 }
+
 
 /* ---------- CONTACT.HTML VÉGE ---------- */
 
