@@ -44,9 +44,6 @@ a:hover{
   }
 
 /* ---------- NAVIGÁCIÓ ---------- */
-.navbar-brand{
-    image-resolution: 100px, 100px;
-}
 
 .navbar{
     font-family: 'Montserrat', sans-serif;
