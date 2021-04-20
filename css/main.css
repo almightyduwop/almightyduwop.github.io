@@ -376,6 +376,14 @@ footer{
         width: 33%;
     }
 
+    .formbuttons{
+        text-align: center;
+    }
+
+    .resetbutton{
+        margin-left: 0px !important;
+    }
+
 }
 
 /* ---------- MOBIL NÉZET VÉGE ---------- */
@@ -590,8 +598,8 @@ footer{
     margin-bottom: 50px;
 }
 
-#formcontainer .inputField{
-    text-align: left !important;
+.centCol{
+    text-align: center;
 }
 
 #formcontainer .form-label{
@@ -604,6 +612,7 @@ footer{
 }
 
 .radiobuttons{
+    margin-top: 40px;
     text-align: left;
     font-size: 1.3em;
 }
@@ -616,9 +625,6 @@ footer{
     height: 200px;
 }
 
-.checkboxes{
-    text-align: left;
-}
 
 .formbuttons button:first-child{
     font-size: 1.5em;
