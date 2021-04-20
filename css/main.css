@@ -598,6 +598,10 @@ footer{
     margin-bottom: 50px;
 }
 
+#appointment{
+    margin-top: 50px;
+}
+
 .centCol{
     text-align: center;
 }
@@ -641,6 +645,11 @@ footer{
 
 textarea{
     resize: none;
+}
+
+#appointment h1{
+    font-size: 2.2em;
+    font-weight: bold;
 }
 
 /* ---------- APPOINTMENT.HTML VÉGE ---------- */
