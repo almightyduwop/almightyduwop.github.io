@@ -350,7 +350,7 @@ footer{
 
     @media screen and (max-width: 650px) {
         #koszonto video{
-            width: 350px;
+            width: 290px;
         }
 
         .carousel-indicators{
