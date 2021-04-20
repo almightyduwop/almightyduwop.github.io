@@ -57,57 +57,73 @@
                 <div id="formcontainer">
                     <form method="post" action="mailto:m1mjir@inf.elte.hu">
                         <div class="form-group row my-3">
-                            <div class="col-lg-4">
-                                <input type="text" class="form-control" id="inputNev" placeholder="Teljes név" maxlength="25">
+                            <div class="col-lg-4 inputField">
+                                <div class="form-group">
+                                    <label class="form-label" for="inputNev">Név:</label>
+                                    <input type="text" class="form-control" value="" name="teljesnev" id="inputNev" placeholder="Teljes név" maxlength="25">
+                                </div>
                             </div>
-                            <div class="col-lg-4">
-                                <input type="tel" class="form-control" id="inputMobile" placeholder="Telefonszám" maxlength="12">
+                            <div class="col-lg-4 inputField">
+                                <div class="form-group">
+                                    <label class="form-label" for="inputMobile">Telefonszám:</label>
+                                    <input type="tel" class="form-control" id="inputMobile" value="" name="telefonszam" placeholder="+36 ..." maxlength="12">
+                                </div>
                             </div>
-                            <div class="col-lg-4">
-                                <input type="text" class="form-control" id="inputEmail" placeholder="E-mail cím" maxlength="25">
+                            <div class="col-lg-4 inputField">
+                                <div class="form-group">
+                                    <label class="form-label" for="inputEmail">E-mail:</label>
+                                    <input type="text" class="form-control" id="inputEmail" value="" name="emailcim" placeholder="E-mail cím" maxlength="25">
+                                </div>
                             </div>
                         </div>
                         <div class="form-group row my-3">
-                            <div class="col-lg-7">
-                                <input type="date" class="form-control" id="inputDate">
+                            <div class="col-lg-7 inputField">
+                                <div class="form-group">
+                                    <label class="form-label" for="inputDate">Dátum:</label>
+                                <input type="date" class="form-control" id="inputDate" value="" name="datum">
+                                </div>
                             </div>
-                            <div class="col-lg-5">
-                                <input type="time" min="09:00" max="17:30" step="1800" class="form-control"
-                                    id="inputTime">
+                            <div class="col-lg-5 inputField">
+                                <div class="form-group">
+                                    <label class="form-label" for="inputTime">Időpont:</label>
+                                    <input type="time" min="09:00" max="17:30" step="1800" class="form-control"
+                                    id="inputTime" value="" name="idopont">
+                                </div>
                             </div>
                         </div>
                         <div class="form-group row my-3">
                             <div class="col-lg-7 radiobuttons">
-                                <input class="form-check-input" type="radio" name="selectedService" id="Szemeszet">
+                                <input class="form-check-input" type="radio" name="selectedService" id="Szemeszet" value="Szemeszet">
                                 <label class="form-check-label" for="Szemeszet">
                                     Szemészet
                                 </label> <br>
-                                <input class="form-check-input" type="radio" name="selectedService" id="Fogaszat">
+                                <input class="form-check-input" type="radio" name="selectedService" id="Fogaszat" value="Fogaszat">
                                 <label class="form-check-label" for="Fogaszat">
                                     Fogászat
                                 </label> <br>
-                                <input class="form-check-input" type="radio" name="selectedService" id="Borgyogyaszat">
+                                <input class="form-check-input" type="radio" name="selectedService" id="Borgyogyaszat" value="Borgyogyaszat">
                                 <label class="form-check-label" for="Borgyogyaszat">
                                     Bőrgyógyászat
                                 </label>
                             </div>
-                            <div class="col-lg-5">
+                            <div class="col-lg-5 inputField">
                                 <div class="form-group">
+                                    <label class="form-label" for="inputMessage">Megjegyzés:</label>
                                     <textarea class="form-control inputArea" id="inputMessage" rows="5"
-                                        placeholder="Üzenet" maxlength="150"></textarea>
+                                        placeholder="Üzenet" maxlength="150" value="" name="megjegyzes"></textarea>
                                 </div>
                             </div>
                             <div class="form-group row my-3">
                                 <div class="col-lg-7 checkboxes">
                                     <h3>Elolvastam és elfogadom:</h3>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="acceptAltSzerz">
+                                        <input class="form-check-input" type="checkbox" value="" id="acceptAltSzerz" name="elfASZF">
                                         <label class="form-check-label" for="acceptAltSzerz">
                                             az általános szerződési feltételekben leírtakat.
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="acceptAdatkezeles">
+                                        <input class="form-check-input" type="checkbox" value="" id="acceptAdatkezeles" name="elfAdatkezeles">
                                         <label class="form-check-label" for="acceptAdatkezeles">
                                             az adatkezeléssel kapcsolatos tájékoztatót.
                                         </label>

@@ -25,20 +25,22 @@ body{
 a:active, a:link{
     color: black;
     text-decoration: underline;
-}
-
-.nav-link{
-    text-decoration: none !important;
-}
+} 
 
 a:visited{
-    color: rgb(151, 151, 151);
+    color: rgb(167, 167, 167);
+    font-style: italic;
 }
 
 a:hover{
     transition: .2s;
     text-shadow:1px 1px rgba(0,0,0,0.4);
 }
+
+.nav-link{
+    text-decoration: none !important;
+}
+
 
 #tartalomraugras{
     background: #319795;
@@ -586,6 +588,19 @@ footer{
     padding-left: 150px;
     border: 1px black solid;
     margin-bottom: 50px;
+}
+
+#formcontainer .inputField{
+    text-align: left;
+}
+
+#formcontainer .form-label{
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+#formcontainer input{
+    margin-top: 0px;
 }
 
 .radiobuttons{
