@@ -513,6 +513,10 @@ footer{
     #contact iframe, #elerhetosegek iframe{
         width: 100% !important;
     }
+
+    .videocol video{
+        width: 500px;
+    }
 }
 
 /* SERVICES.HTML - SZOLGÁLTATÁSOK OLDALA */
