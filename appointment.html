@@ -49,107 +49,109 @@
         </nav>
     </header>
 
+ <main>
     <section class="container" id="appointment">
-            <div class="row">
-                <div class="col-12 centCol">
-                    <h1 tabindex="0">Foglaljon időpontot ma!</h1>
-                    <p tabindex="0"><em>Rendelőnk szolgáltatásai kizárólag időpontfoglalással vehetőek igénybe. </em><br>
-                        Kérjük foglaljon egy időpontot az alábbi űrlap kitöltésével, vagy keressen minket elérhetőségeink
-                        egyikén.</p>
+        <div class="row">
+            <div class="col-12 centCol">
+                <h1 tabindex="0">Foglaljon időpontot ma!</h1>
+                <p tabindex="0"><em>Rendelőnk szolgáltatásai kizárólag időpontfoglalással vehetőek igénybe. </em><br>
+                    Kérjük foglaljon egy időpontot az alábbi űrlap kitöltésével, vagy keressen minket elérhetőségeink
+                    egyikén.</p>
+            </div>
+        </div>
+        <div id="formcontainer">
+            <form method="post" action="mailto:m1mjir@inf.elte.hu">
+                <div class="form-group row my-3">
+                    <div class="col-lg-4 inputField">
+                        <div class="form-group">
+                            <label class="form-label" for="inputNev">Név:</label>
+                            <input type="text" class="form-control" value="" name="teljesnev" id="inputNev"
+                                placeholder="Teljes név" maxlength="25">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 inputField">
+                        <div class="form-group">
+                            <label class="form-label" for="inputMobile">Telefonszám:</label>
+                            <input type="tel" class="form-control" id="inputMobile" value="" name="telefonszam"
+                                placeholder="+36 ..." maxlength="12">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 inputField">
+                        <div class="form-group">
+                            <label class="form-label" for="inputEmail">E-mail:</label>
+                            <input type="text" class="form-control" id="inputEmail" value="" name="emailcim"
+                                placeholder="E-mail cím" maxlength="25">
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div id="formcontainer">
-                <form method="post" action="mailto:m1mjir@inf.elte.hu">
-                    <div class="form-group row my-3">
-                        <div class="col-lg-4 inputField">
-                            <div class="form-group">
-                                <label class="form-label" for="inputNev">Név:</label>
-                                <input type="text" class="form-control" value="" name="teljesnev" id="inputNev"
-                                    placeholder="Teljes név" maxlength="25">
-                            </div>
+                <div class="form-group row my-3">
+                    <div class="col-lg-7 inputField">
+                        <div class="form-group">
+                            <label class="form-label" for="inputDate">Dátum:</label>
+                            <input type="date" class="form-control" id="inputDate" value="" name="datum">
                         </div>
-                        <div class="col-lg-4 inputField">
-                            <div class="form-group">
-                                <label class="form-label" for="inputMobile">Telefonszám:</label>
-                                <input type="tel" class="form-control" id="inputMobile" value="" name="telefonszam"
-                                    placeholder="+36 ..." maxlength="12">
-                            </div>
+                    </div>
+                    <div class="col-lg-5 inputField">
+                        <div class="form-group">
+                            <label class="form-label" for="inputTime">Időpont:</label>
+                            <input type="time" min="09:00" max="17:30" step="1800" class="form-control"
+                                id="inputTime" value="" name="idopont">
                         </div>
-                        <div class="col-lg-4 inputField">
-                            <div class="form-group">
-                                <label class="form-label" for="inputEmail">E-mail:</label>
-                                <input type="text" class="form-control" id="inputEmail" value="" name="emailcim"
-                                    placeholder="E-mail cím" maxlength="25">
-                            </div>
+                    </div>
+                </div>
+                <div class="form-group row my-3">
+                    <div class="col-lg-7 radiobuttons">
+                        <input class="form-check-input" type="radio" name="selectedService" id="Szemeszet"
+                            value="Szemeszet">
+                        <label class="form-check-label" for="Szemeszet">
+                            Szemészet
+                        </label> <br>
+                        <input class="form-check-input" type="radio" name="selectedService" id="Fogaszat"
+                            value="Fogaszat">
+                        <label class="form-check-label" for="Fogaszat">
+                            Fogászat
+                        </label> <br>
+                        <input class="form-check-input" type="radio" name="selectedService" id="Borgyogyaszat"
+                            value="Borgyogyaszat">
+                        <label class="form-check-label" for="Borgyogyaszat">
+                            Bőrgyógyászat
+                        </label>
+                    </div>
+                    <div class="col-lg-5 inputField">
+                        <div class="form-group">
+                            <label class="form-label" for="inputMessage">Megjegyzés:</label>
+                            <textarea class="form-control inputArea" id="inputMessage" rows="5" placeholder="Üzenet"
+                                maxlength="150" name="megjegyzes"></textarea>
                         </div>
                     </div>
                     <div class="form-group row my-3">
-                        <div class="col-lg-7 inputField">
-                            <div class="form-group">
-                                <label class="form-label" for="inputDate">Dátum:</label>
-                                <input type="date" class="form-control" id="inputDate" value="" name="datum">
+                        <div class="col-lg-7 checkboxes">
+                            <h3>Elolvastam és elfogadom:</h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="acceptAltSzerz"
+                                    name="elfASZF">
+                                <label class="form-check-label" for="acceptAltSzerz">
+                                    <strong>az általános szerződési feltételekben leírtakat.</strong>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="acceptAdatkezeles"
+                                    name="elfAdatkezeles">
+                                <label class="form-check-label" for="acceptAdatkezeles">
+                                    <strong>az adatkezeléssel kapcsolatos tájékoztatót.</strong>
+                                </label>
                             </div>
                         </div>
-                        <div class="col-lg-5 inputField">
-                            <div class="form-group">
-                                <label class="form-label" for="inputTime">Időpont:</label>
-                                <input type="time" min="09:00" max="17:30" step="1800" class="form-control"
-                                    id="inputTime" value="" name="idopont">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group row my-3">
-                        <div class="col-lg-7 radiobuttons">
-                            <input class="form-check-input" type="radio" name="selectedService" id="Szemeszet"
-                                value="Szemeszet">
-                            <label class="form-check-label" for="Szemeszet">
-                                Szemészet
-                            </label> <br>
-                            <input class="form-check-input" type="radio" name="selectedService" id="Fogaszat"
-                                value="Fogaszat">
-                            <label class="form-check-label" for="Fogaszat">
-                                Fogászat
-                            </label> <br>
-                            <input class="form-check-input" type="radio" name="selectedService" id="Borgyogyaszat"
-                                value="Borgyogyaszat">
-                            <label class="form-check-label" for="Borgyogyaszat">
-                                Bőrgyógyászat
-                            </label>
-                        </div>
-                        <div class="col-lg-5 inputField">
-                            <div class="form-group">
-                                <label class="form-label" for="inputMessage">Megjegyzés:</label>
-                                <textarea class="form-control inputArea" id="inputMessage" rows="5" placeholder="Üzenet"
-                                    maxlength="150" name="megjegyzes"></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group row my-3">
-                            <div class="col-lg-7 checkboxes">
-                                <h3>Elolvastam és elfogadom:</h3>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="acceptAltSzerz"
-                                        name="elfASZF">
-                                    <label class="form-check-label" for="acceptAltSzerz">
-                                        <strong>az általános szerződési feltételekben leírtakat.</strong>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="acceptAdatkezeles"
-                                        name="elfAdatkezeles">
-                                    <label class="form-check-label" for="acceptAdatkezeles">
-                                        <strong>az adatkezeléssel kapcsolatos tájékoztatót.</strong>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-lg-5 formbuttons">
-                                <button class="btn btn-secondary submitbutton" type="submit">Időpontfoglalás</button>
-                                <button class="btn btn-secondary resetbutton" type="reset">Törlés</button>
-                            </div>
+                        <div class="col-lg-5 formbuttons">
+                            <button class="btn btn-secondary submitbutton" type="submit">Időpontfoglalás</button>
+                            <button class="btn btn-secondary resetbutton" type="reset">Törlés</button>
                         </div>
                     </div>
-                </form>
-            </div>
-    </section>
+                </div>
+            </form>
+        </div>
+</section>
+ </main>
 
     <footer>
         <div class="container-fluid">
